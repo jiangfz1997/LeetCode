@@ -1,0 +1,2 @@
+243，244心得：
+当遇到多次运行时，注意precomputation，同时，由于unlimited time， 或许会有重复出现的输入，最好建立cache对其进行保存
