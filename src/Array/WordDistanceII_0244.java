@@ -1,7 +1,14 @@
 package Array;
 
 import java.util.*;
+/*
+ * Seems the same but different from 243
 
+ * How to fix: Build a hashmap to record it.
+ * Complexity: O(n)
+ * What's new: When coming to "Multiple times", you need to think about the "Precomputation", which means that you need try to prevent doing one things multiple time.
+ * What reminds fixed: Non for now
+ * */
 public class WordDistanceII_0244 {
     Map<String, ArrayList<Integer>> map;
 
