@@ -7,7 +7,6 @@ import java.util.HashMap;
 * How to fix: Use HashMap to record all the number
 * Complexity: O(n)
 * What's new: Learned How to use HashMap
-*
 * What reminds fixed: Differences between Hash HashSet and HashMap
 *
 * */

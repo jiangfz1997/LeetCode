@@ -1,6 +1,6 @@
 package Array;
 
-public class ShortestWordDistance {
+public class ShortestWordDistance_0243 {
     public int shortestDistance(String[] words, String word1, String word2) {
         int i1 = -1, i2 = -1;
         int minDistance = words.length;
@@ -20,7 +20,7 @@ public class ShortestWordDistance {
     }
 
     public static void main(String[] args){
-        ShortestWordDistance s = new ShortestWordDistance();
+        ShortestWordDistance_0243 s = new ShortestWordDistance_0243();
         String[] sb = {"practice", "make", "perfect", "coding", "make"};
         System.out.println(s.shortestDistance(sb, "coding", "practice"));
     }

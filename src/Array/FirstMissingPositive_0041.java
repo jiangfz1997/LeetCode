@@ -9,7 +9,7 @@ package Array;
 
 
 
-public class FirstMissingPositive {
+public class FirstMissingPositive_0041 {
     public int firstMissingPositive(int[] nums) {
         int tmp[] = new int[nums.length+1];
         System.out.println(tmp.length);
@@ -33,7 +33,7 @@ public class FirstMissingPositive {
     }
 
     public static void main(String args[]){
-        FirstMissingPositive f = new FirstMissingPositive();
+        FirstMissingPositive_0041 f = new FirstMissingPositive_0041();
        int[] nums = {1};
         int m = f.firstMissingPositive(nums);
         System.out.println(m);

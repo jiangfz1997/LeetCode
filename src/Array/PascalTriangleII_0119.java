@@ -3,7 +3,7 @@ package Array;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PascalTriangleII {
+public class PascalTriangleII_0119 {
     public List<Integer> getRow(int rowIndex) {
 
         List<List<Integer>> triangle = new ArrayList<List<Integer>>();
