@@ -9,7 +9,7 @@ public class LongestSubstringwithAtMostTwoDistinctCharacters_0159 {
 
             if(map[s.charAt(end++)]++==0 ) counter++;/* modify counter here */
 
-            while(counter > 2)if(map[s.charAt(begin++)]-- ==1) counter--;
+            while(counter > 2)if(map[s.charAt(begin++)]-- ==1) counter--; //此处 == 1 指向的是上一次end遇到新字母时所改变的对应数组的位置
 
             d = Math.max(d, end - begin);
         }
