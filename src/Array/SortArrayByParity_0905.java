@@ -16,6 +16,8 @@ public class SortArrayByParity_0905 {
 
         return A;
     }
+
+
     public static void main(String[] args){
         SortArrayByParity_0905 s = new SortArrayByParity_0905();
         int[] a = {0,1};
