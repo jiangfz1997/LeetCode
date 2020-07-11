@@ -15,7 +15,7 @@ public class MaximumWidthOfBinaryTree_0662 {
           this.right = right;
       }
   }
-    public int widthOfBinaryTree(TreeNode root) {
+    /*public int widthOfBinaryTree(TreeNode root) {
         if(root == null) return 0;
 
         int maxWidth = 0;
@@ -36,5 +36,5 @@ public class MaximumWidthOfBinaryTree_0662 {
         }
 
         return maxWidth;
-    }
+    }*/
 }
