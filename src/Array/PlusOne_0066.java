@@ -1,4 +1,7 @@
 package Array;
+
+import java.util.Scanner;
+
 /*进位若多出一位再另行创建数组，其一定是100000组成，int数组初始化默认为0*/
 public class PlusOne_0066 {
     public int[] plusOne(int[] digits) {
@@ -11,6 +14,7 @@ public class PlusOne_0066 {
         }while(flag && i>=0 );
         int[] result = new int[digits.length+1];
         result[0] = 1;
+        Scanner s = new Scanner(System.in);
         return result;
     }
 }
