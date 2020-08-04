@@ -51,8 +51,18 @@ public class Tree_DFS_BFS {
             }
         }
     }
+    public static int searchDFS(TreeNode root, TreeNode target, int level){
+         if(root == null) return -1;
+         int result;
+         if(root == target) return level;
+        else{
+           result = Math.max( searchDFS(root.left, target, level+1),searchDFS(root.right, target, level+1));
+        }
+        return result;
 
+    }
     public static void main(String[] args) {
+         TreeNode node8 = new TreeNode(8);
         TreeNode node7 = new TreeNode(7);
         TreeNode node6 = new TreeNode(6);
         TreeNode node5 = new TreeNode(5);
@@ -61,7 +71,7 @@ public class Tree_DFS_BFS {
         TreeNode node2 = new TreeNode(2, node4, node5);
         TreeNode node = new TreeNode(1, node2, node3);
         treeBFS(node);
-
+        System.out.println(searchDFS(node, node8, 0));
 
     }
 }
