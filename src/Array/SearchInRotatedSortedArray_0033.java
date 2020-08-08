@@ -24,6 +24,7 @@ public class SearchInRotatedSortedArray_0033 {
         return bSearch(nums, target, 0, l-1);
     }
     private int bSearch(int[] nums, int target, int start, int end){
+
         if(start == end && nums[start] != target) return -1;
         int middle = (start+end)/2;
         if(target == nums[middle]) return middle;
