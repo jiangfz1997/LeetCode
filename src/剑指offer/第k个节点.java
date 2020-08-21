@@ -5,8 +5,8 @@ import Tree.PrintTree;
 import Tree.TreeNode;
 
 public class 第k个节点 {
-    int count = 0;
-    TreeNode KthNode(TreeNode pRoot, int k)
+    static int count = 0;
+    public static TreeNode KthNode(TreeNode pRoot, int k)
     {
         count = k;
         return traverse(pRoot);
@@ -17,11 +17,12 @@ public class 第k个节点 {
         if(pRoot.left == null) return pRoot;
         else return findMin(pRoot.left);
     }
-    public TreeNode traverse(TreeNode pRoot){
+    public static TreeNode traverse(TreeNode pRoot){
         if(pRoot == null) return null;
         traverse(pRoot.left);
-        if(count == 0) return pRoot;
         count--;
+        if(count == 0) return pRoot;
+
         traverse(pRoot.right);
         return null;
     }
@@ -32,5 +33,7 @@ public class 第k个节点 {
 
         TreeNode node = bt.build(a,0);
         PrintTree.Print(node);
+        TreeNode node22 = KthNode(node, 5);
+        System.out.println(node22);
     }
 }
