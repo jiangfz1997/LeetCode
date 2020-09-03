@@ -11,5 +11,5 @@ public class TreeNode {
         this.right = right;
     }
 
-    TreeNode(int x) { val = x; }
+    public TreeNode(int x) { val = x; }
   }
